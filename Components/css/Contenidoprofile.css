@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.centralizar{
+	width:auto;
+	height:auto;
+	margin:auto;
+	}
+.baners{ width:100%;
+height:auto;
+
+position:relative;
+float:left;
+background-color:rgba(237,204,167,1.00);}
+
+#baner1,#baner2{
+	width: 200px;
+	height: 180px;
+	position: relative;
+	border: solid 10px black;
+	overflow: hidden;/* este es lo que se utiliza para esconder todo lo que este fuera de la imagen*/
+	box-shadow: 0 px 0px 5px 2px rgba(0,0,0,0.5);
+	background-color: rgba(213,202,163,1.00);
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	margin-top: 15px;
+	margin-right:5px;
+	float:right;
+}
+.central2block{
+	width:450px;
+	height:auto;
+	margin:auto;
+	
+	}
+#baner3,#baner4,#baner5{
+	width:20%; min-width: 200px;
+	height:auto; min-height: 180px;
+	position: relative;
+	border: solid 10px black;
+	overflow: hidden;/* este es lo que se utiliza para esconder todo lo que este fuera de la imagen*/
+	box-shadow: 0 px 0px 5px 2px rgba(0,0,0,0.5);
+	background-color: rgba(213,202,163,1.00);
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	margin-top: 15px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+}
+.central3block{
+	width:700px;
+	height:auto;
+	margin:auto;
+	}
