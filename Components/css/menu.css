@@ -1,26 +1,73 @@
 @charset "utf-8";
 /* CSS Document */
+.panel{
+        width: 100%;
+        height: 100%;
+        float:left;
+    }
+.botones{
+        width:20%;
+        height:50px;
+        float:left;
+        display:block;
+        background-color: rgba(180,99,9,1.00);
+        text-align:center;
+        list-style:none;
+        z-index:98;
+    }
 
+.botones a{
+        color: white;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        text-decoration: none;
+    }
+
+.botones:hover{
+        background-color:rgba(231,200,71,1.00);
+    }
+	
+.botones:active{
+        background-color: rgba(201,151,3,1.00);
+    }
+.CurentPage li{
+        background-color:rgba(231,200,71,1.00);
+    }
+.botones_log{
+        width:150px;
+        height:35px;
+        float:left;
+        padding-top:  10px;
+        display:block;
+        background-color: rgba(180,99,9,1.00);
+        text-align:center;
+        list-style:none;
+        z-index:98;
+        color: white;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        text-decoration: none;
+    }
+
+/* ************************************************** */
 .vertical-menu {
-    width: 20%;
-	max-width:200px; /* Set a width if you like */
-	height:100%;
-}
+        width: 20%;
+        max-width:200px; /* Set a width if you like */
+        height:100%;
+    }
 
 .vertical-menu a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-}
+        background-color: #eee; /* Grey background color */
+        color: black; /* Black text color */
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove underline from links */
+    }
 
 .vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-}
+        background-color: #ccc; /* Dark grey background on mouse-over */
+    }
 
 .vertical-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
-}
+        background-color: #4CAF50; /* Add a green color to the "active/current" link */
+        color: white;
+    }
 
