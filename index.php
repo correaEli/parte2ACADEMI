@@ -64,6 +64,8 @@ if ($action == 'login') {
                 $loggedProfile=$i;
                 include './parts/profile.php';
         }
+} else if ($action == 'goProfile') {
+            include './parts/messages.php';
 } else if ($action == 'goRegister') {
                 include './parts/Register.php';
 } else {
