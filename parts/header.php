@@ -19,15 +19,15 @@
 <?php
   if (!isset($loggedUser)) {
 ?>
-        <a type="button" class="botones_log" href="index.php?a=register">Register</a>
+        <a type="button" class="botones_log" href="index.php?a=goRegister">Register</a>
          
         <a type="button" class="botones_log" href="index.php?a=login">Login</a>
 <?php
 } else {
 ?>
-        <a type="link" class="BTN_Info" href="index.php?a=goProfile">
+        <a class="BAR_Info" >
 <?php
-  echo '<span style="color: white; font-weight: bold;">Hi ' . $loggedUser->username . '</span>&nbsp;&nbsp;&nbsp;';
+  echo '<span style="color: white; font-weight: bold;">Hi ' . $loggedUser->username . '&nbsp;';
 ?>
         </a>
         <a class="botones_log" href="index.php?a=logout">Logout</a>

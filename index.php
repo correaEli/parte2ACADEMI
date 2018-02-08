@@ -64,7 +64,9 @@ if ($action == 'login') {
                 $loggedProfile=$i;
                 include './parts/profile.php';
         }
-}else {
+} else if ($action == 'goRegister') {
+                include './parts/Register.php';
+} else {
     include './parts/body.php';
 }
 //*****************************************************************
@@ -73,7 +75,6 @@ if ($action == 'login') {
 include './parts/footer.php';
 
 if (isset($_SESSION['loginTime'])) {
-    echo   $loggedUser;
     echo '<pre>' . date('d-M-Y H:m:s', $_SESSION['loginTime']) . '</pre>';
 }
 
