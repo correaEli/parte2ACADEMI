@@ -61,7 +61,9 @@ if ($action == 'login') {
                 include './parts/Login.php';
         }else {
                 $i = Profile::loadFromID($_SESSION['userID']);
+                //$j = Profile::loadFromStats($_SESSION['userID']);
                 $loggedProfile=$i;
+                //$stats= $j;
                 include './parts/profile.php';
         }
 } else if ($action == 'goRegister') {
