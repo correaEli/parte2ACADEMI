@@ -113,7 +113,21 @@ if ($action == 'login') {
 } else if ($action == 'goExplorer') {
             include './parts/UnderContruction.php';
 } else if ($action == 'goRegister') {
-            include './parts/Register.php';
+        $u = User::loadFromUsername($_POST['username']);
+    if ($u) {
+        showError('The username already exist.');
+        include './Parts/register.php';
+    } else {
+        $u = new User();
+        
+        $u->username = $_POST['username'];
+        $u->password = $_POST['password1'];
+        $u->first_name = $_POST['first_name'];
+          $u->last_name = $_POST['last_name'];
+        $u->email = $_POST['email'];
+        
+        $u->save();
+    }
 } else {
     include './parts/body.php';
 }
