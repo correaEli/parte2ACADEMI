@@ -61,15 +61,59 @@ if ($action == 'login') {
                 include './parts/Login.php';
         }else {
                 $i = Profile::loadFromID($_SESSION['userID']);
-                //$j = Profile::loadFromStats($_SESSION['userID']);
                 $loggedProfile=$i;
-                //$stats= $j;
+                $j = Profile::loadFromStats($_SESSION['userID']);
+                $stats= $j;
+                $k = Profile::loadFromFoes($_SESSION['userID']);
+                $NameFoes=$k;
+                $L=Profile::loadFromFriend($_SESSION['userID']);
+                $NameFriend=$L;
+                $m=Profile::loadFromCraft($_SESSION['userID']);
+                $NameCraft=$m;
+                $n=Profile::loadFromSorcery($_SESSION['userID']);
+                $NameSorcery=$n;
                 include './parts/profile.php';
         }
-} else if ($action == 'goProfile') {
-            include './parts/messages.php';
+}else if ($action == 'goProfileFoes') {
+        if (empty($_SESSION)) {
+                showError('pleass log in.');
+                include './parts/Login.php';
+        }else {
+                $i = Profile::loadFromName('Ryughei');
+                $loggedProfile=$i;
+                $j = Profile::loadFromStats($loggedProfile->id);
+                $stats= $j;
+                include './parts/profile.php';
+                
+        }
+}else if ($action == 'goProfileFriends') {
+        if (empty($_SESSION)) {
+                showError('pleass log in.');
+                include './parts/Login.php';
+        }else {
+                $i = Profile::loadFromName($Friends);
+                $loggedProfile=$i;
+                //echo '<pre>' . print_r($loggedProfile, true) . '</pre>';
+                $j = Profile::loadFromStats($loggedProfile->id);
+                $stats= $j;
+                $k = Profile::loadFromFoes($loggedProfile->id);
+                $NameFoes=$k;
+                $L=Profile::loadFromFriend($loggedProfile->id);
+                $NameFriend=$L;
+                $m=Profile::loadFromCraft($loggedProfile->id);
+                $NameCraft=$m;
+                $n=Profile::loadFromSorcery($loggedProfile->id);
+                $NameSorcery=$n;
+                include './parts/profile.php';
+        }
+} else if ($action == 'goMessage') {
+            include './parts/UnderContruction.php';
+} else if ($action == 'goAcademia') {
+            include './parts/UnderContruction.php';
+} else if ($action == 'goExplorer') {
+            include './parts/UnderContruction.php';
 } else if ($action == 'goRegister') {
-                include './parts/Register.php';
+            include './parts/Register.php';
 } else {
     include './parts/body.php';
 }
@@ -78,9 +122,9 @@ if ($action == 'login') {
 //*****************************************************************
 include './parts/footer.php';
 
-if (isset($_SESSION['loginTime'])) {
+/*if (isset($_SESSION['loginTime'])) {
     echo '<pre>' . date('d-M-Y H:m:s', $_SESSION['loginTime']) . '</pre>';
-}
+}*/
 
 function showError($msg) {
     echo '<div class="alert alert-danger" role="alert">' . $msg . '</div>';

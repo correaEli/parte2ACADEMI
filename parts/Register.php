@@ -17,6 +17,14 @@ $uname = $_POST['username'] ?? '';
                 <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username" value="<?php echo $uname; ?>">
               </div>
               <div class="form-group">
+                <label for="FirstName">First Name</label>
+                <input type="text" class="form-control" name="FirstName" placeholder="Enter First Name">
+              </div>
+              <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" class="form-control" name="LastName" placeholder="Enter Last Name">
+              </div>
+              <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="">
               </div>
@@ -28,6 +36,7 @@ $uname = $_POST['username'] ?? '';
                 <label for="password2">Repeat Password</label>
                 <input type="password" class="form-control" name="password2" placeholder="Repeat Password">
               </div>
+              
               <button type="submit" class="botones_RegLog">Register</button>
             </form>
         </div>

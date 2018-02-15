@@ -4,16 +4,9 @@
 		margin: 0px;
 		padding: 0px;
 	}
-.info{
-		position:relative;
-		float:right;
-		width: 75%; min-width: 525px;
-		height: 260px;
-		background-color: rgba(220,169,95,1.00) ;
-	}
 .contenido{
 		width:100%;
-		height: auto;
+		height: 100%;
 		position:relative;
 		background-color:rgba(237,204,167,1.00);; 
 		overflow: hidden;
@@ -24,7 +17,7 @@
 		height: 35vw; min-height:280px;
 		background-color:  rgba(220,169,95,1.00) ;
 	}
-.ContenidoLogReg $0{
+.ContenidoLogReg{
         width: 25%;
         height: 100%;
         margin: auto;

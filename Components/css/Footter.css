@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -32,4 +32,12 @@
 .you img{
 	width:50px;
 	height:50px;}
-
+.Cop{
+    width: 60%;
+    margin-left: 0%;
+    float: left;
+}
+.Cop h5{
+    margin: auto;
+    text-align: right;
+}

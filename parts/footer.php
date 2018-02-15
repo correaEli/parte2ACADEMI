@@ -1,6 +1,6 @@
 </div>
 <div class="footer">
-        <div class="col-sm-3">
+        <div class="Cop">
           <h5 class="COPYRIGHT">© 2018 ELI CORREA Y GIAN CARDONA</h5>
         </div>
   <div class="fa"><a href="http://www.facebook.com"><img src="Components/pictures/logo1.png" width="88" height="88" alt="Facebook"/></a></div>
